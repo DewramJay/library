@@ -1,0 +1,23 @@
+.mar-11{
+	background-color:#ACA6A8;
+	padding: 150px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 300px;
+	margin-right: 300px;
+	display: flex;
+}
+
+.mar-3{
+	width: 500px;
+	background-color: #D5CACA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.col-md-61{
+	width: 400px;
+}

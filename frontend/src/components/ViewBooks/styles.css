@@ -1,0 +1,50 @@
+.modal-body-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.card-text-author{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.detail{
+    justify-content: left;
+    align-items: left;
+    text-align: left;    
+}
+
+
+.imgbook{
+    width: 150px;
+}
+
+
+.card-img, .card-img-top {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 300px;
+}
+
+.btn-rud{
+    border-color: black;
+}
+
+.row {
+    --bs-gutter-x: 50px;
+    --bs-gutter-y: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 150px;
+    
+}
+
+.card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    text-align: center;
+}

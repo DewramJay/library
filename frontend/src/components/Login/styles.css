@@ -1,0 +1,34 @@
+
+
+
+
+.mar{
+	background-color:#ACA6A8;
+	padding: 150px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 300px;
+	margin-right: 300px;
+	display: flex;
+}
+
+.mar-2{
+	width: 500px;
+	background-color: #D5CACA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.card-body1{
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 90%;
+}
