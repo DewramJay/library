@@ -98,7 +98,7 @@ const Signup = () => {
 						<label for="password">Password</label>
 					</div>
 					<Link to="http://localhost:8070/Student/add"><button type="submit" class="btn btn-primary w-100 mb-3">Sign In</button></Link>
-					<Link to="/login"><button type="submit" class="btn btn-primary w-100 mb-3">Login</button></Link>
+					<Link to="/login"><button type="submit" class="btn btn-outline-primary w-100 mb-3">Login</button></Link>
 					</form>
 				</div>
 				</div>

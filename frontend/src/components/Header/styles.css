@@ -196,3 +196,40 @@
     border-radius: var(--bs-dropdown-border-radius);
 }
 
+
+.card-set-1{
+    width:700px;
+    display: flex;
+    justify-content:left;
+}
+
+.col-md-4-1{
+    width: 200px;
+    display: flex;
+    justify-content:left;
+}
+
+.row-1{
+    display: flex;
+    justify-content: left;
+}
+
+.container-1{
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+}
+
+.imgt{
+    margin-top: 20px;
+}
+
+.card-body-1{
+    width: 300px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-left: 20px;
+}

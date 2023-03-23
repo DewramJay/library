@@ -1,15 +1,13 @@
-//import React from 'react'
-import Header from "../Header";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
-import './styles.css';
+import Header from "../Header";
 import AddBooks from "../AddBooks";
 import ButtonPanel from "../ButtonPanel";
 
-
-const ViewBooks = () => {
+const Novel = () => {
   const [Books, setBooks] = useState([]);
-
+  
   useEffect(() => {
     function getBooks() {
       axios
@@ -25,35 +23,15 @@ const ViewBooks = () => {
     getBooks();
   }, []);
 
-  const [bookTitle, setbookTitle] = useState("");
-	const [bookCategory, setbookCategory] = useState("");
-	const [bookRegNo, setbookRegNo] = useState("");
-	const [language, setlanguage] = useState("");
-  const [imageUrl, setimageUrl] = useState("");
-  const [updateId, setupdateId] = useState("");
-  
-
-  function updateData(e){
-		e.preventDefault();
-		
-		const newBook = {
-			bookTitle,
-			bookCategory, 
-			bookRegNo,
-			language, 
-      imageUrl,
-      updateId
-		}
-
-  }
-
   return (
     <div>
       <Header />
       <ButtonPanel/>
+      <br/>
+      <h1 className="h">Novels</h1>
       <div className="container container-mar">
         <div className="row row-mar">
-          {Books.map(item => (
+          {Books.filter(item => item.bookCategory === "Novel").map(item => (
             <div className="col-md-4" key={item._id}>
               <div className="card card-set">
                 <img src={item.imageUrl} className="card-img-top img-size" alt="..." />
@@ -70,12 +48,9 @@ const ViewBooks = () => {
       </div>
     </div>
 
-      
-
   );
 };
 
-export default ViewBooks;
 
 
-
+export default Novel

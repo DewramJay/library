@@ -61,25 +61,30 @@ router.route("/").get((req,res)=>{
 })
 
 router.get("/getOne/:id", async (req, res) => {
-  const filter = { bookCategory: req.params.id };
+  const filter = { _id: req.params.id };
 
-  const data = await Book.find(filter);
+  const data = await Book.findById(filter);
 
   if (data) {
     return res.status(200).send({ success: true, Book: data });
   } else {
     return res.status(400).send({ success: false, msg: "Data not found" });
   }
-});
+}); 
 
-router.route("/delete/:id").delete(async(req,res)=>{
-  let userId = req.params.id;
-  await Book.findByIdAndRemove(userId).then(()=>{
-      res.status(200).send({status:"user deleted"}); 
+router.route("/delete/:Id").delete(async(req,res)=>{
+  let bookRegNo = req.params.Id;
+
+  await Book.findOneAndDelete({ bookRegNo })
+  .then (()=>{
+      res.status(200).send({status: "Item is Deleted"})
   }).catch((err)=>{
-      res.status(500).send({status:"error with delete data", error: err.message});
+      console.log(err.message);
+      res.status(500).send({status:"Error with deleting data"});
   })
-})
+
+}) 
+
 
 
 

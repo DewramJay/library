@@ -35,7 +35,7 @@ try {
 	}	
 
 	
-	if (loggedIn) return <Navigate to="/viewBooks" ></Navigate>;
+	if (loggedIn) return <Navigate to="/main" ></Navigate>;
 
 	return (
 		<div class="mar">
@@ -71,7 +71,7 @@ try {
 					/>
 					<label for="password">Password</label>
 				  </div>
-				  <button type="submit"  class="btn btn-primary w-100 mb-3" onClick={checkLogin} >Login</button>
+				  <Link to="/main"><button type="submit"  class="btn btn-primary w-100 mb-3"  >Login</button></Link>
 				  <Link to="/signup"><button type="button" class="btn btn-outline-primary w-100"  >Sign In</button></Link>
 				</form>
 			  </div>

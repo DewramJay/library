@@ -21,7 +21,7 @@
 
 
 .imgbook{
-    width: 150px;
+    width: 130px;
 }
 
 
@@ -47,4 +47,26 @@
 .card-title {
     margin-bottom: var(--bs-card-title-spacer-y);
     text-align: center;
+}
+
+.container-mar{
+    margin-top: 0px;
+}
+
+.row-mar{
+    margin-top: 0px;
+}
+
+.img-size{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card-set{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
 }

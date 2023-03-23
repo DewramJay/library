@@ -33,7 +33,7 @@ const AddBooks
 
   return (
     <div>
-      <button type="button" class="btn btn-primary btn-addbook"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <button type="button" class="btn1 btn-primary1 btn-book"  data-bs-toggle="modal" data-bs-target="#exampleModal">
         Add Books
       </button>
 
@@ -102,7 +102,7 @@ const AddBooks
             </div>
 
             <div class="modal-footer">
-              <button type="button" onClick={sentData} class="btn btn-primary">Save changes</button>
+              <button type="button" onClick={sentData} class="btn1 btn-primary1">Add Book</button>
             </div>
           </div>
         </div>
