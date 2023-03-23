@@ -30,7 +30,7 @@ const Deletebooks = () => {
   return (
     <div>
       <button type="button" class="btn1 btn-primary1 btn-book" data-bs-toggle="modal" data-bs-target="#delete-book-modal">
-        Delete Books
+        Delete Book
       </button>
 
       <div class="modal fade" id="delete-book-modal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

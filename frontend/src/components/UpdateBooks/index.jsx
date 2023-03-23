@@ -32,7 +32,7 @@ const UpdateBooks = () => {
   return (
     <div>
       <button type="button" class="btn1 btn-primary1 btn-book" data-bs-toggle="modal" data-bs-target="#update-book-modal">
-        Update Books
+        Update Book
       </button>
 
       <div class="modal fade" id="update-book-modal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

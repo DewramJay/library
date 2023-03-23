@@ -34,7 +34,7 @@ const AddBooks
   return (
     <div>
       <button type="button" class="btn1 btn-primary1 btn-book"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Add Books
+        Add Book
       </button>
 
       <div class="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

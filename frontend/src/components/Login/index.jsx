@@ -71,7 +71,7 @@ try {
 					/>
 					<label for="password">Password</label>
 				  </div>
-				  <Link to="/main"><button type="submit"  class="btn btn-primary w-100 mb-3"  >Login</button></Link>
+				  <button type="submit"  class="btn btn-primary w-100 mb-3" onClick={checkLogin} >Login</button>
 				  <Link to="/signup"><button type="button" class="btn btn-outline-primary w-100"  >Sign In</button></Link>
 				</form>
 			  </div>
